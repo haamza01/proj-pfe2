@@ -1,0 +1,214 @@
+.container100 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 20%;
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+
+.container100 .card {
+    position: relative;
+    width: 320px;
+    height: 450px;
+    background: #CFF2F0;
+    opacity: 60%;
+    border-radius: 20px;
+    /* border: #020202 1px solid; */
+    overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 11px 9px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 0px 11px 9px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 0px 11px 9px rgba(0, 0, 0, 0.5);
+}
+
+.container100 .card:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #17B6A7;
+    clip-path: circle(150px at 80% 20%);
+    transition: 0.5s ease-in-out;
+}
+
+.container100 .card:hover:before {
+    clip-path: circle(300px at 80% -20%);
+}
+
+.container100 .card:after {
+    content: 'MYF';
+    position: absolute;
+    top: 30%;
+    left: -20%;
+    font-size: 12em;
+    font-weight: 800;
+    font-style: italic;
+    color: rgba(255, 255, 25, 0.05)
+}
+
+.container100 .card .imgBx {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10000;
+    width: 100%;
+    height: 220px;
+    transition: 0.5s;
+}
+
+.container100 .card:hover .imgBx {
+    top: 0%;
+    transform: translateY(0%);
+}
+
+.container100 .card .imgBx img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-25deg);
+    width: 270px;
+}
+
+.container100 .card .contentBx1 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    transition: 1s;
+    z-index: 10;
+}
+
+.container100 .card:hover .contentBx1 {
+    height: 210px;
+}
+
+.container100 .card .contentBx1 h2 {
+    position: relative;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+    margin: 0;
+}
+
+.container100 .card .contentBx .size,
+.container100 .card .contentBx1 .color {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.container100 .card:hover .contentBx1 .size {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.5s;
+}
+
+.container100 .card:hover .contentBx1 .color {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.6s;
+}
+
+.container100 .card .contentBx1 .size h3,
+.container100 .card .contentBx1 .color h3 {
+    color: #fff;
+    font-weight: 300;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: 10px;
+}
+
+.container100 .card .contentBx1 .size span {
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    font-size: 14px;
+    display: inline-block;
+    color: #111;
+    background: #fff;
+    margin: 0 5px;
+    transition: 0.5s;
+    color: #111;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.container100 .card .contentBx1 .size span:hover {
+    background: #9bdc28;
+}
+
+.container100 .card .contentBx1 .color span {
+    width: 20px;
+    height: 20px;
+    background: #ff0;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.container100 .card .contentBx1 .color span:nth-child(2) {
+    background: #9bdc28;
+}
+
+.container100 .card .contentBx1 .color span:nth-child(3) {
+    background: #03a9f4;
+}
+
+.container100 .card .contentBx1 .color span:nth-child(4) {
+    background: #e91e63;
+}
+
+.container100 a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: rgb(73, 23, 255);
+    border-radius: 4px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    color: rgb(255, 254, 254);
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 0.5s;
+    margin-top: 0;
+}
+
+.container100 .card:hover .contentBx1 a {
+    opacity: 1;
+    transform: translateY(0px);
+    transition-delay: 0.75s;
+}
+
+.container100 .btn542 {
+    margin-top: 1rem;
+}
+
+.container100 .ppp a {
+    padding: 10px 20px;
+    background: rgb(255, 2, 2);
+    border-radius: 4px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    color: rgb(255, 254, 254);
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 0.5s;
+    margin-top: 0;
+}
+
+.container100 .ppp {
+    margin-top: 10px;
+}
